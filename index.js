@@ -19,7 +19,17 @@ var data=[{
 //     return data;
 // }
 // console.log(getData());
-console.log(data);
-console.log(data[0].name);
-console.log(data[1].name);
-console.log(data[2].name);
+data.forEach((item) => {
+    console.log(item.name);
+    console.log(item.age);
+    console.log(item.city);
+    console.log(item.country);
+});
+const data1=document.getElementById("mydata");
+document.write("<h1>Data from the array:</h1>");
+data.forEach((item) => {
+    document.write("<p>Name: " + item.name + "</p>");
+    document.write("<p>Age: " + item.age + "</p>");
+    document.write("<p>City: " + item.city + "</p>");
+    document.write("<p>Country: " + item.country + "</p>");
+});
